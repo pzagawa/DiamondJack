@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="screenMenuList">
+        <item name="android:divider">#00000000</item>
+        <item name="android:dividerHeight">6sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+    <style name="screenMenuItem" parent="android:Widget.TextView">
+        <item name="android:padding">3sp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:background">#40808080</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:gravity">center</item>        
+    </style>
+    <style name="screenMenuItemDesc" parent="android:Widget.TextView">
+        <item name="android:paddingTop">0sp</item>
+        <item name="android:paddingBottom">5sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:background">#40808080</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:gravity">center</item>        
+    </style>
+    <style name="screenMenuHeader" parent="android:Widget.TextView">
+        <item name="android:padding">8sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ff808080</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>    
+    <style name="tabActivityHeader" parent="android:Widget.TextView">
+        <item name="android:padding">8sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ff808080</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>        
+    <style name="screenLogo">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="screenGameLinkHeader" parent="android:Widget.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffff8844</item>
+        <item name="android:text">@string/app_website_header</item>
+    </style>
+    <style name="screenGameLink" parent="android:Widget.TextView">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffaa55</item>
+        <item name="android:text">@string/app_website_underlined</item>
+    </style>
+    <style name="screenText" parent="android:Widget.TextView">
+        <item name="android:paddingLeft">8sp</item>
+        <item name="android:paddingRight">8sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#fff0f0f0</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+    </style>
+    <style name="gameLevelsList">
+        <item name="android:divider">#00000000</item>
+        <item name="android:dividerHeight">1sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+		<item name="android:cacheColorHint">#00000000</item>        
+    </style>
+    <style name="emptyListView" parent="android:Widget.TextView">
+		<item name="android:textSize">22sp</item>		
+		<item name="android:layout_marginTop">8sp</item>
+		<item name="android:layout_marginBottom">8sp</item>
+        <item name="android:padding">6sp</item>
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="emptyListViewInfo" parent="android:Widget.TextView">
+		<item name="android:textSize">16sp</item>		
+        <item name="android:padding">6sp</item>
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="screenPlayHeader" parent="android:Widget.TextView">
+        <item name="android:padding">2sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ff808080</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:gravity">center</item>       
+        <item name="android:layout_marginTop">2sp</item>        
+        <item name="android:layout_marginBottom">2sp</item>        
+    </style>    
+    <style name="playLevelName" parent="android:Widget.TextView">
+        <item name="android:paddingLeft">4sp</item>
+        <item name="android:paddingRight">4sp</item>
+        <item name="android:paddingBottom">4sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_marginBottom">4sp</item>                
+        <item name="android:textSize">20sp</item>
+    </style>    
+    <style name="playLevelAuthor" parent="android:Widget.TextView">
+        <item name="android:paddingLeft">4sp</item>
+        <item name="android:paddingRight">4sp</item>
+        <item name="android:paddingBottom">2sp</item>
+        <item name="android:textColor">#ffe0e0e0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_marginBottom">2sp</item>                
+        <item name="android:layout_marginRight">8sp</item>                
+        <item name="android:textSize">16sp</item>
+    </style>    
+    <style name="playLevelDescription" parent="android:Widget.TextView">
+        <item name="android:paddingTop">2sp</item>
+        <item name="android:paddingLeft">4sp</item>
+        <item name="android:paddingRight">4sp</item>
+        <item name="android:paddingBottom">4sp</item>
+        <item name="android:textColor">#ffe0e0e0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_marginBottom">2sp</item>
+        <item name="android:layout_marginRight">8sp</item>
+        <item name="android:maxLines">5</item>        
+        <item name="android:textSize">14sp</item>
+    </style>    
+    <style name="playLevelScore" parent="android:Widget.TextView">
+        <item name="android:paddingLeft">4sp</item>
+        <item name="android:paddingRight">4sp</item>
+        <item name="android:textColor">#ffd0d0d0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="playLevelStats" parent="android:Widget.TextView">
+        <item name="android:paddingLeft">4sp</item>
+        <item name="android:paddingRight">4sp</item>
+        <item name="android:textColor">#ffb0b0b0</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="levelItemName" parent="android:Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#ffe0e0e0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+	<style name="levelItemSelectedImage" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">12px</item>
+        <item name="android:textColor">#ffe0e0e0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:text"></item>
+    </style>
+    <style name="levelItemStatsIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">4px</item>
+    </style>        
+	<style name="levelItemStatsText" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">12px</item>
+        <item name="android:textColor">#ffa0a0a0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:text"></item>
+    </style>
+	<style name="totalStatsItem" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginRight">12sp</item>
+        <item name="android:textColor">#ffb0b0b0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:typeface">serif</item>        
+        <item name="android:text"></item>
+    </style>
+	<style name="totalStatsItemValue" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#fff0f0f0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:typeface">serif</item>        
+        <item name="android:text"></item>
+    </style>    
+    <style name="statsIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <style name="profileTextLabel" parent="android:Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffb0b0b0</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="profileText" parent="android:Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12sp</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:text">...</item>
+    </style>        
+</resources>

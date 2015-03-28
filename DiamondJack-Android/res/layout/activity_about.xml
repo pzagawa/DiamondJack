@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+   	<pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout
+		android:id="@+id/llBackground"
+		android:gravity="top"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+
+   		<ImageView android:src="@drawable/logo"
+   			android:id="@+id/imageLogo"
+   			style="@style/screenLogo" />
+ 		
+		<TextView android:id="@+id/labelHeader"
+			style="@style/screenMenuHeader"
+			android:text="@string/activity_header_about" />
+	
+		<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/scroller"
+   			android:paddingBottom="16dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:fillViewport="false" >
+		    	
+			<LinearLayout
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical">
+        		
+        		<!-- Diamond Jack version 1.0 -->
+				<TextView android:id="@+id/labelAboutLine1"
+					android:layout_marginBottom="8sp"
+					android:textColor="#ffffffdd"
+					style="@style/screenText"/>
+
+				<TextView
+					android:layout_marginBottom="16sp"
+					android:text="@string/about_text_copyright"
+					style="@style/screenText"/>
+
+				<TextView
+					android:layout_marginBottom="16sp"
+					android:text="@string/about_text_credits"
+					style="@style/screenText"/>
+
+				<!-- credits #1 -->
+				<TextView
+        			android:textSize="14sp"
+					android:layout_marginBottom="2sp"
+					android:textStyle="italic"
+					android:textColor="#ff808080"
+					android:text="@string/about_text_credit_1"
+					style="@style/screenText"/>		
+				<TextView
+					android:layout_marginBottom="16sp"
+					android:text="@string/about_text_credit_1_person"
+					style="@style/screenText"/>
+		
+				<!-- credits #2 -->
+				<TextView
+        			android:textSize="14sp"
+					android:layout_marginBottom="2sp"
+					android:textStyle="italic"
+					android:textColor="#ff808080"
+					android:text="@string/about_text_credit_2"
+					style="@style/screenText"/>
+				<TextView
+					android:layout_marginBottom="16sp"
+					android:text="@string/about_text_credit_2_person"
+					style="@style/screenText"/>
+
+				<TextView
+					android:layout_marginTop="8sp"
+					android:layout_marginBottom="8sp"
+					android:textColor="#ffd04040"
+					android:text="@string/about_text_poweredby"
+					style="@style/screenText"/>
+		
+				<TextView android:id="@+id/labelGameLinkHeader"
+					style="@style/screenGameLinkHeader" />
+		
+				<TextView android:id="@+id/labelGameLink"
+					style="@style/screenGameLink" />
+				
+			</LinearLayout>
+
+		</ScrollView>
+		
+   	</pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout>
+
+</LinearLayout>

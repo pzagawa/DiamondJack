@@ -1,0 +1,10 @@
+id:15001
+name:Deep down
+description:don't afraid darkness
+author:Piotr Zagawa
+size-tilemap-bkg-wrap:18*12
+size-tilemap-ground:40*23
+size-tilemap-enemies:40*23
+size-tilemap-shape:40*23
+size-tilemap-objects:40*23
+version:1

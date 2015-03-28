@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:minWidth="230dp"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+   	<pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout
+		android:id="@+id/llBackground"
+		android:gravity="top"
+		android:weightSum="1"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    	
+		<TextView android:id="@+id/labelTitle"
+			android:layout_weight="0"
+	        android:gravity="center_horizontal"
+			android:textColor="#ffc0c0c0"
+			android:text="Starting game.."
+	        android:textSize="18sp"
+	        android:typeface="serif"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+	    	android:layout_marginTop="8dp"
+			android:layout_marginBottom="8sp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />        
+	 
+		<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/scroller"
+			android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:layout_marginBottom="16dp"
+		    android:fillViewport="true" >
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				android:id="@+id/llayContent"
+				android:orientation="vertical"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content" />
+
+		</ScrollView>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_weight="0"			
+			android:gravity="center_horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+		    <Button android:id="@+id/closeButton"
+		    	android:background="@drawable/big_button_close_bkg"
+		    	android:layout_marginBottom="12dp"
+		    	android:enabled="false"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+			    
+		    <Button android:id="@+id/tryConnectAgainButton"
+		    	android:background="@drawable/big_button_try_connect_again_bkg"
+		    	android:layout_marginBottom="12dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+		
+		</LinearLayout>
+		
+   	</pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout>
+
+</LinearLayout>

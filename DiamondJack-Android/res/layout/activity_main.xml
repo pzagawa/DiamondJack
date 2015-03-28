@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+	<pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout
+		android:id="@+id/llBackground"
+		android:gravity="top"
+	  	android:orientation="vertical"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent">
+
+	   	<ImageView android:src="@drawable/logo"
+			android:id="@+id/imageLogo"
+			style="@style/screenLogo" />
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="48dp">
+		
+			   	<ImageView android:src="@drawable/title_icon"
+					android:id="@+id/titleIconLeft"
+			   		android:layout_marginRight="8dp"
+				  	android:layout_width="wrap_content"
+				  	android:layout_height="wrap_content" />
+			
+				<TextView android:id="@+id/labelHeader"
+			        android:textSize="20sp"
+			        android:textColor="#ffb0b0b0"
+			        android:textStyle="italic"
+			        android:typeface="serif"
+				  	android:layout_width="wrap_content"
+				  	android:layout_height="fill_parent"
+				  	android:gravity="center_vertical"
+					android:text="@string/activity_header_main" />
+					
+			   	<ImageView android:src="@drawable/title_icon"
+					android:id="@+id/titleIconRight"
+			   		android:layout_marginLeft="8dp"
+				  	android:layout_width="wrap_content"
+				  	android:layout_height="wrap_content" />
+					
+		</LinearLayout>
+
+		<ListView android:id="@+id/menuList"
+			style="@style/screenMenuList" />
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="14dp" />
+			
+		<TextView android:id="@+id/labelGameLinkHeader"
+			style="@style/screenGameLinkHeader" />
+			
+		<TextView android:id="@+id/labelGameLink"
+			style="@style/screenGameLink" />
+
+	</pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout>
+
+</LinearLayout>

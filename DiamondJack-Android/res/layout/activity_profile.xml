@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+   	<pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout
+		android:id="@+id/llBackground"
+		android:gravity="top"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+
+		<TextView android:id="@+id/labelHeader"
+			style="@style/tabActivityHeader"
+			android:text="@string/activity_header_profile" />
+
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<!-- ACCOUNT TAB -->
+			<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/contentTab0"
+				android:padding="16sp"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:fillViewport="false" >
+
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<!-- account details -->
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    	android:id="@+id/accountDetailsView"
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+		
+						<!-- nickname -->
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileTextLabel"
+			        		android:text="@string/profileNickname" />
+			        		
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileText"
+							android:id="@+id/textNickname" />
+		
+						<!-- email -->
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileTextLabel"
+			        		android:text="@string/profileEmail" />
+			        		
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileText"
+							android:id="@+id/textEmail" />
+		
+						<!-- account type -->
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileTextLabel"
+			        		android:text="@string/profileAccountType" />
+			        		
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileText"
+		        			android:layout_marginBottom="6sp"					
+							android:id="@+id/textAccountType" />
+		
+						<!-- account type description -->
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							android:textSize="14sp"
+					        android:textColor="#ffe0e0e0"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:layout_marginBottom="12sp"        			
+							android:id="@+id/textAccountTypeDescription" />
+	
+					</LinearLayout>
+
+					<!-- banned status -->
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    	android:id="@+id/accountBannedStatus"
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						
+						<!-- status -->
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileTextLabel"
+			        		android:text="@string/account_status" />
+			        		
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileText"
+			        		android:text="@string/account_banned_text" />
+
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileText"
+							android:id="@+id/textBannedComment" />
+						
+					</LinearLayout>
+
+					<!-- work offline status -->
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    	android:id="@+id/accountOfflineStatus"
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+						<!-- status -->
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileTextLabel"
+			        		android:text="@string/account_status" />
+
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileText"
+			        		android:text="@string/account_offline_text" />
+						
+					</LinearLayout>
+
+					<!-- account upgrade to PREMIUM tips -->
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    	android:id="@+id/accountUpgradeHints"
+						android:orientation="vertical"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+						<!-- hint -->
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							style="@style/profileTextLabel"
+			        		android:text="@string/account_hint" />
+			        		
+						<TextView style="@style/profileText"
+							android:text="@string/tipProfileForAccountUpgrade" />
+						
+					</LinearLayout>
+
+				</LinearLayout>
+				
+			</ScrollView>
+
+			<!-- STATS TAB -->
+			<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:id="@+id/contentTab1"
+				android:padding="12sp"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:fillViewport="false" >
+
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="vertical"
+					android:paddingLeft="12sp"
+					android:paddingRight="12sp"
+					android:gravity="center_horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+				
+					<!-- stats score header -->
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:orientation="horizontal"
+						android:layout_marginBottom="12sp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+		
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+			        		android:textSize="24sp"
+			        		android:text="@string/statsScore"
+							style="@style/totalStatsItem" />							
+						<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+							android:id="@+id/textScore"
+			        		android:textSize="24sp"
+			        		android:text="..."
+							style="@style/totalStatsItemValue" />
+							
+					</LinearLayout>
+		
+					<!-- stats items -->
+					<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_marginBottom="8dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">				
+					
+						<!-- completed levels -->
+					    <TableRow android:gravity="center_vertical"
+					    	android:layout_marginBottom="4sp">		    
+							<ImageView style="@style/statsIcon"
+								android:src="@drawable/level_item_status_completed" />			    
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				        		android:text="@string/statsCompletedLevels"
+								style="@style/totalStatsItem" />							
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+								android:id="@+id/textCompletedLevels"
+				        		android:text="..."
+								style="@style/totalStatsItemValue" />
+					    </TableRow>
+		
+						<!-- levels completion count -->
+					    <TableRow android:gravity="center_vertical"
+					    	android:layout_marginBottom="4sp">			    
+							<ImageView style="@style/statsIcon"
+								android:src="@drawable/level_item_status_completed" />			    
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				        		android:text="@string/statsCompletionCount"
+								style="@style/totalStatsItem" />
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+								android:id="@+id/textCompletionCount"
+				        		android:text="..."
+								style="@style/totalStatsItemValue" />
+					    </TableRow>
+		
+						<!-- deads -->
+					    <TableRow android:gravity="center_vertical"
+					    	android:layout_marginBottom="4sp">			    
+							<ImageView style="@style/statsIcon"
+								android:src="@drawable/level_item_status_skull" />			    
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				        		android:text="@string/statsSuicides"
+								style="@style/totalStatsItem" />							
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+								android:id="@+id/textDeads"
+				        		android:text="..."
+								style="@style/totalStatsItemValue" />
+					    </TableRow>
+		
+						<!-- play time -->
+					    <TableRow android:gravity="center_vertical"
+					    	android:layout_marginBottom="4sp">			    
+							<ImageView style="@style/statsIcon"
+								android:src="@drawable/level_item_status_time" />			    
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				        		android:text="@string/statsPlayTime"
+								style="@style/totalStatsItem" />							
+							<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+								android:id="@+id/textPlayTime"
+				        		android:text="..."
+								style="@style/totalStatsItemValue" />
+					    </TableRow>
+					    
+					</TableLayout>			
+
+					<TextView style="@style/emptyListViewInfo"
+						android:id="@+id/labelTipForAccountUpgrade"
+						android:text="@string/tipStatsForAccountUpgrade" />							
+
+				</LinearLayout>
+									
+			</ScrollView>
+
+		</FrameLayout>
+
+   	</pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout>
+
+</TabHost>

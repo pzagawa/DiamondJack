@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:padding="4dp"
+	android:gravity="center_vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<ProgressBar android:id="@+id/progressBar"
+		android:indeterminateDrawable="@drawable/progress_anim"		
+		android:layout_width="22dp"
+		android:layout_height="22dp"
+		android:layout_marginRight="5dp" />
+
+	<ImageView android:id="@+id/imageView"
+		android:src="@drawable/progress_image"
+		android:layout_width="22dp"
+		android:layout_height="22dp"
+		android:layout_marginRight="5dp" />
+
+	<TextView android:id="@+id/textView"
+		android:textColor="#ffa0a0a0"
+		android:text="accessing google accounts"
+		android:textSize="14sp"
+		android:typeface="serif"		
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>

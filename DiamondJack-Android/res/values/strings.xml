@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Diamond Jack</string>
+	
+	<string name="app_website_header">Create • Share • Play!</string>
+	
+	<string name="app_website">http://dj-game.appspot.com</string>
+	<string name="app_website_underlined">http://dj-game.appspot.com</string>
+
+	<string name="dialog_button_ok">OK</string>
+	<string name="dialog_button_cancel">Cancel</string>
+	
+	<string name="activity_header_about">About</string>
+	<string name="activity_header_main">Main Menu</string>
+	<string name="activity_header_options">Settings</string>
+	<string name="activity_header_play">Level</string>
+	<string name="activity_header_levels">New Game</string>
+	<string name="activity_header_profile">Profile</string>
+
+	<string name="tab_public">Public Levels</string>
+	<string name="tab_personal">Personal Levels</string>
+
+	<string name="tab_account">Account</string>
+	<string name="tab_stats">Stats</string>
+	<string name="tab_news">News</string>
+
+	<string name="menu_item_continue">Continue</string>
+	<string name="menu_item_new_game">New Game</string>
+	<string name="menu_item_profile">Profile</string>
+	<string name="menu_item_options">Settings</string>
+	<string name="menu_item_about">About</string>
+	
+	<string name="menu_item_audio">Audio</string>
+	<string name="menu_item_video">Video</string>
+	<string name="menu_item_controls">Controls</string>
+	<string name="menu_item_vibrator">Vibration</string>
+
+	<string name="option_enabled">enabled</string>
+	<string name="option_disabled">disabled</string>
+
+	<string name="option_video_mode_fill">fill screen</string>
+	<string name="option_video_mode_fixed">no screen stretch</string>
+	<string name="option_video_mode_ratio">keep aspect ratio</string>
+	
+	<string name="option_controls_singletouch">singletouch</string>
+	<string name="option_controls_multitouch">multitouch</string>
+	
+	<string name="about_text_version">version</string>	
+	<string name="about_text_copyright">Copyright 2011 by Piotr Zagawa\nAll Rights Reserved</string>
+	<string name="about_text_credits">CREDITS</string>
+	<string name="about_text_credit_1">design, graphics, development, audio</string>
+	<string name="about_text_credit_1_person">Piotr Zagawa</string>	
+	<string name="about_text_credit_2">animation, graphics</string>
+	<string name="about_text_credit_2_person">Łukasz Zagawa</string>
+	<string name="about_text_poweredby">powered by\nlibGDX • OrmLite</string>
+
+	<string name="dialog_please_wait_title">Please wait</string>
+	<string name="dialog_loading_data_text">loading data..</string>
+	<string name="dialog_starting_game_text">starting game..</string>
+	<string name="dialog_update_database_text">updating database..</string>
+	<string name="dialog_processing_data_text">processing data..</string>
+	
+	<string name="game_item_no_description">(no description)</string>
+
+	<string name="playButtonText">Play!</string>
+
+	<string name="statsNotAvailable">no stats available</string>
+	<string name="statsScore">Score:</string>
+	<string name="statsSuicides">deaths:</string>
+	<string name="statsCompletedExits">exits:</string>
+	<string name="statsCompletedLevels">levels:</string>
+	<string name="statsCompletionCount">completion:</string>
+	<string name="statsBestTime">best time:</string>
+	<string name="statsSeconds">seconds</string>
+	<string name="statsPlayTime">play time:</string>
+
+	<string name="noExitsCompleted">none</string>
+	
+	<string name="update_levels">update</string>
+	<string name="update_profile">update</string>
+	
+	<string name="emptyLevelsListLabel">no items found</string>
+	<string name="emptyLevelsListLabelInfo">press <u>update</u> menu option to download new levels</string>
+		
+	<string name="profileNickname">nickname</string>
+	<string name="profileEmail">email</string>
+	<string name="profileAccountType">account type</string>
+	
+	<string name="updaterTitleStart">Updating game..</string>	
+	<string name="updaterTitleFinish">Done!</string>
+	<string name="updaterTitleFinishWithErrors">Done with errors</string>
+		
+	<string name="accessRightsDescAccountBeta">You have access to all portal features for limited time.</string>	
+	<string name="accessRightsDescAccountFree">Features for this account are limited.</string>
+	<string name="accessRightsDescAccountPremium">You have access to all portal features.</string>
+	
+	<string name="tipLevelsForAccountUpgrade">You can create levels, share them and play levels made by others. Login to game portal for more information.</string>
+	<string name="tipStatsForAccountUpgrade">You can share your gameplay stats, compete with others and browse leaderboards. Login to game portal for more information.</string>
+	<string name="tipProfileForAccountUpgrade">You can get more game features.\n\nYou can create your own level, test and publish, share gameplay stats and compete with others.\n\nLogin to game portal and upgrade your account to premium.</string>
+
+	<string name="httpAuthError">try again later</string>
+	<string name="httpConnectionError">can\'t connect to internet. Please check your connection and try again</string>
+
+	<string name="account_status">status</string>
+	<string name="account_banned_text">your account has been banned</string>
+	<string name="account_offline_text">working offline, can\'t get account details</string>
+	<string name="account_hint">hint</string>
+
+</resources>

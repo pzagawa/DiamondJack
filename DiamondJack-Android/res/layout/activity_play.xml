@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+	<pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout
+		android:id="@+id/llBackground"
+		android:gravity="top"
+	  	android:orientation="vertical"
+		android:padding="8sp"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TextView android:id="@+id/labelName"
+				android:text="Name"
+				style="@style/playLevelName" />
+	
+			<TextView android:id="@+id/labelAuthor"
+				android:text="Author"
+				style="@style/playLevelAuthor" />
+		
+			<TextView android:id="@+id/labelDescription"
+				android:text="Description"
+				style="@style/playLevelDescription" />
+
+		</LinearLayout>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="8sp" />
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:background="#80808080"
+			android:layout_width="fill_parent"
+			android:layout_height="1px" />
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="4sp" />
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/llayStats"
+				android:orientation="vertical"
+				android:layout_marginRight="16sp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+	
+				<TextView android:id="@+id/labelScore"
+					android:text="Score"				
+					style="@style/playLevelScore" />
+		
+				<TextView android:id="@+id/labelStats"
+					android:text="Stats"
+					style="@style/playLevelStats" />
+	
+			</LinearLayout>
+			
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/llayPlayRight"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:layout_marginTop="8sp"			
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent">
+				
+				<Button android:id="@+id/btnPlayRight"
+		    		android:background="@drawable/big_button_play_bkg"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" />
+				
+			</LinearLayout>				
+		
+		</LinearLayout>
+			
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/llayPlayBottom"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_marginTop="8sp"			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			
+			<Button android:id="@+id/btnPlayBottom"
+	    		android:background="@drawable/big_button_play_bkg"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+				
+		</LinearLayout>				
+
+	</pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout>
+
+</LinearLayout>

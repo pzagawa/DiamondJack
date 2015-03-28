@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+   	<pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout
+		android:id="@+id/llBackground"
+		android:gravity="top"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+
+		<TextView android:id="@+id/labelHeader"
+			style="@style/tabActivityHeader"
+			android:text="@string/activity_header_levels" />
+		
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<FrameLayout android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<!-- PUBLIC LEVELS TAB -->
+			<LinearLayout android:id="@+id/contentTab1"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				
+				<ListView android:id="@+id/publicLevelsList"
+					style="@style/gameLevelsList" />
+
+				<!-- empty list view -->
+				<LinearLayout android:id="@+id/emptyPublicListView"
+					android:orientation="vertical"
+					android:visibility="gone"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView style="@style/emptyListView"
+						android:text="@string/emptyLevelsListLabel" />
+					<TextView style="@style/emptyListViewInfo"
+						android:text="@string/emptyLevelsListLabelInfo" />						
+					<TextView style="@style/emptyListViewInfo"
+						android:id="@+id/labelTipPublic"
+						android:text="@string/tipLevelsForAccountUpgrade" />
+				</LinearLayout>
+									
+			</LinearLayout>
+
+			<!-- PRIVATE LEVELS TAB -->
+			<LinearLayout android:id="@+id/contentTab2"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				
+				<ListView android:id="@+id/privateLevelsList"
+					style="@style/gameLevelsList" />
+				
+				<!-- empty list view -->
+				<LinearLayout android:id="@+id/emptyPrivateListView"
+					android:orientation="vertical"
+					android:visibility="gone"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<TextView style="@style/emptyListView"
+						android:text="@string/emptyLevelsListLabel" />
+					<TextView style="@style/emptyListViewInfo"
+						android:text="@string/emptyLevelsListLabelInfo" />						
+					<TextView style="@style/emptyListViewInfo"
+						android:id="@+id/labelTipPrivate"
+						android:text="@string/tipLevelsForAccountUpgrade" />
+				</LinearLayout>
+				
+			</LinearLayout>
+
+		</FrameLayout>
+
+   	</pl.pzagawa.diamond.jack.ui.BackgroundLinearLayout>
+
+</TabHost>

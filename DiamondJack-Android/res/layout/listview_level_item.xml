@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:paddingLeft="8sp"
+	android:paddingRight="8sp"
+	android:paddingTop="4sp"
+	android:paddingBottom="8sp"
+	android:background="#d0303030"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal"
+			android:weightSum="1"
+			android:gravity="center_vertical"
+			android:layout_marginBottom="8sp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/textName"
+				android:layout_weight="1"
+				android:text="Name"
+				style="@style/levelItemName" />
+				
+			<ImageView android:id="@+id/statusIconSelected"
+				style="@style/levelItemSelectedImage"
+				android:layout_weight="0"
+        		android:layout_marginRight="0px"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:src="@drawable/level_item_status_selected" />				
+
+		</LinearLayout>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"			
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/textScore"
+				android:text="score"				
+				style="@style/levelItemStatsText" />
+				
+			<ImageView android:id="@+id/statusIconNew"
+				style="@style/levelItemStatsIcon"
+				android:src="@drawable/level_item_status_new" />
+
+			<ImageView android:id="@+id/statusIconCompleted"
+				style="@style/levelItemStatsIcon"
+				android:src="@drawable/level_item_status_completed" />
+				
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/textCompleted"
+				android:text="99"				
+				style="@style/levelItemStatsText" />
+
+			<ImageView android:id="@+id/statusIconSkull"
+				style="@style/levelItemStatsIcon"
+				android:src="@drawable/level_item_status_skull" />				
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/textDeads"
+				android:text="99"				
+				style="@style/levelItemStatsText" />
+
+			<ImageView android:id="@+id/statusIconTime"
+				style="@style/levelItemStatsIcon"
+				android:src="@drawable/level_item_status_time" />				
+
+			<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/textTime"
+				android:text="00:00:00"				
+				style="@style/levelItemStatsText" />				
+		
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</LinearLayout>
